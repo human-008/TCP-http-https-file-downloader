@@ -1,0 +1,8 @@
+gcc -c -o SSLClient.o SSLClient.c
+gcc -o SSLClient SSLClient.o -lssl -lcrypto
+
+for hhtp file:
+./SSLClient http://www.africau.edu/images/default/sample.pdf
+
+for https file:
+./SSLClient https://web.ist.utl.pt/~fabio.ferreira/material/asa/clrs.pdf
